@@ -22,7 +22,8 @@ import java.util.Collections;
 
 public class PrisonMenu extends Menu {
 
-    private final Button ViewHomes, Storage, Tools, Warps, Skiils, ShadowyAuction;
+    private final Button ViewHomes, Storage, Tools, Warps, Skiils,
+            ShadowyAuction;
 
     public PrisonMenu() {
         setSize(45);
@@ -64,7 +65,7 @@ public class PrisonMenu extends Menu {
         Skiils = new Button() {
             @Override
             public void onClickedInMenu(final Player player, final Menu menu, final ClickType click) {
-
+                new PlayerSkills().displayTo(player);
             }
 
             @Override
@@ -325,6 +326,31 @@ public class PrisonMenu extends Menu {
             return ItemCreator.of(CompMaterial.BLACK_STAINED_GLASS_PANE, " ")
                     .build().make();
         }
+    }
+
+    class PlayerSkills extends Menu {
+
+        public PlayerSkills() {
+            super(PrisonMenu.this);
+            setSize(45);
+            setTitle("&8Your Skills");
+            ButtonReturnBack.setTitle("&AGo Back");
+            ButtonReturnBack.setLore(Collections.singletonList("&7to Prison Menu"));
+            ButtonReturnBack.setMaterial(CompMaterial.ARROW);
+        }
+    }
+
+    class AuctionCalendar extends Menu {
+
+        public AuctionCalendar() {
+            super(PrisonMenu.this);
+            setSize(45);
+            setTitle("&8Shadowy Auction Calendar");
+            ButtonReturnBack.setTitle("&AGo Back");
+            ButtonReturnBack.setLore(Collections.singletonList("&7to Prison Menu"));
+            ButtonReturnBack.setMaterial(CompMaterial.ARROW);
+        }
+
     }
 }
 
