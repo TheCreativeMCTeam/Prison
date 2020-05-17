@@ -1,0 +1,7 @@
+name: Prison
+version: ${project.version}
+main: org.creativemc.prison.Prison
+api-version: 1.13
+authors: [NitroCreeper]
+description: Simple prison core
+soft-depend: HeadDatabase

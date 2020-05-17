@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.mineacademy.plugin:WorldEdit:7.2.0-SNAPSHOT-4910">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mineacademy/plugin/WorldEdit/7.2.0-SNAPSHOT-4910/WorldEdit-7.2.0-SNAPSHOT-4910.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mineacademy/plugin/WorldEdit/7.2.0-SNAPSHOT-4910/WorldEdit-7.2.0-SNAPSHOT-4910-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/mineacademy/plugin/WorldEdit/7.2.0-SNAPSHOT-4910/WorldEdit-7.2.0-SNAPSHOT-4910-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
