@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a672807-ece8-4221-a183-37f819ca93cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/Prison.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/Prison.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/commands/HomesManagerCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/menus/PrisonMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/menus/PrisonMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/events/RankPrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/creativemc/prison/events/RankPrefix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

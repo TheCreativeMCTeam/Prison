@@ -22,6 +22,6 @@ public class RankPrefix implements Listener {
         final Rank rank = cache.getRank();
 
         event.setFormat(Common.colorize("&7[") + rank.getColor() + rank.getName() + Common.colorize("&7]")
-                + " " + player.getName() + ":" + " " + event.getMessage());
+                + " " + player.getName() + ":" + " " + "&F" + event.getMessage());
     }
 }
