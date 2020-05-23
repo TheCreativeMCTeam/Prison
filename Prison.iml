@@ -57,5 +57,14 @@
     <orderEntry type="library" name="Maven: org.mineacademy.plugin:Vault:1.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.mineacademy.plugin:WorldEdit:7.2.0-SNAPSHOT-4910" level="project" />
     <orderEntry type="library" name="Maven: org.mineacademy.plugin:WorldGuard:7.0.3-SNAPSHOT-2020" level="project" />
+    <orderEntry type="module-library" scope="PROVIDED">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Desktop/Test Servers/1.8.8/plugins/CustomRecipeAPI-1.2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

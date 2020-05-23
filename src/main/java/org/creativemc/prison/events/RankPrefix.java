@@ -1,5 +1,6 @@
 package org.creativemc.prison.events;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
@@ -22,6 +23,6 @@ public class RankPrefix implements Listener {
         final Rank rank = cache.getRank();
 
         event.setFormat(Common.colorize("&7[") + rank.getColor() + rank.getName() + Common.colorize("&7]")
-                + " " + player.getName() + ":" + " " + "&F" + event.getMessage());
+                + " " + player.getName() + ":" + " " + ChatColor.WHITE + event.getMessage());
     }
 }

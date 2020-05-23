@@ -6,9 +6,11 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.creativemc.prison.commands.AdminRankCommand;
-import org.creativemc.prison.events.InclusionManager;
+import org.creativemc.prison.commands.DiamondSwordArmourStand;
+import org.creativemc.prison.commands.PrisonMenuCommand;
 import org.creativemc.prison.events.PlayerListener;
 import org.creativemc.prison.events.RankPrefix;
+import org.creativemc.prison.notifications.CustomTAB;
 import org.creativemc.prison.notifications.PrisonScoreboard;
 import org.creativemc.prison.setup.PrisonSetupCommandGroup;
 import org.mineacademy.fo.Common;
@@ -36,9 +38,11 @@ public final class Prison extends SimplePlugin implements Listener {
          */
 
         registerEvents(new PrisonScoreboard());
+        registerCommand(new PrisonMenuCommand());
+        registerCommand(new DiamondSwordArmourStand());
+        registerEvents(new CustomTAB());
         registerEvents(new RankPrefix());
         registerCommand(new AdminRankCommand());
-        registerEvents(new InclusionManager());
         registerEvents(new PlayerListener());
         registerCommands("setup", new PrisonSetupCommandGroup());
 

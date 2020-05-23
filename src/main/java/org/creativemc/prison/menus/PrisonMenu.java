@@ -7,6 +7,7 @@ import org.bukkit.event.inventory.ClickType;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.creativemc.prison.tools.HardendDiamondPick;
+import org.creativemc.prison.utils.TypePrison;
 import org.mineacademy.fo.Common;
 import org.mineacademy.fo.menu.Menu;
 import org.mineacademy.fo.menu.MenuTools;
@@ -303,6 +304,7 @@ public class PrisonMenu extends Menu {
                     lore.add(Common.colorize("&7just in a click of second!"));
                     lore.add(Common.colorize(" "));
                     lore.add(Common.colorize("&EClick to warp!"));
+                    lore.add(Common.colorize(TypePrison.EMCRAFTING.name()));
 
 
                     meta.setLore(lore);
