@@ -24,11 +24,76 @@ import java.util.Collections;
 public class PrisonMenu extends Menu {
 
     private final Button ViewHomes, Storage, Tools, Warps, Skiils,
-            ShadowyAuction;
+            ShadowyAuction, CommunicatingPoints, QuestsLog;
 
     public PrisonMenu() {
         setSize(45);
         setTitle("&8Prison Menu");
+
+        QuestsLog = new Button() {
+            @Override
+            public void onClickedInMenu(final Player player, final Menu menu, final ClickType click) {
+
+            }
+
+            @Override
+            public ItemStack getItem() {
+
+                final HeadDatabaseAPI api = new HeadDatabaseAPI();
+
+                final ItemStack QuestLog = new ItemStack(api.getItemHead("2004"));
+                final ItemMeta meta = QuestLog.getItemMeta();
+                meta.setDisplayName(Common.colorize("&AQuests Log"));
+                final ArrayList<String> lore = new ArrayList();
+
+                lore.add(Common.colorize("&&View your current &Factive &7quests"));
+                lore.add(Common.colorize("&7and complete them to earn &6coins"));
+                lore.add(Common.colorize("&7and &Dspecial &7rewards!"));
+                lore.add(Common.colorize(" "));
+                lore.add(Common.colorize("&EClick to view!"));
+
+                return QuestLog;
+            }
+        };
+
+
+        CommunicatingPoints = new Button() {
+            @Override
+            public void onClickedInMenu(final Player player, final Menu menu, final ClickType click) {
+
+            }
+
+            @Override
+            public ItemStack getItem() {
+
+
+                final HeadDatabaseAPI api = new HeadDatabaseAPI();
+
+                final ItemStack CommunicatingPooints = new ItemStack(api.getItemHead("2003"));
+                final ItemMeta meta = CommunicatingPooints.getItemMeta();
+                meta.setDisplayName(Common.colorize("&ACommunicating Points (CP)"));
+                final ArrayList<String> lore = new ArrayList();
+
+                lore.add(Common.colorize("&BTalk &7about a specific topic in"));
+                lore.add(Common.colorize("&7chat with two or more people"));
+                lore.add(Common.colorize("&7to earn &7+&314 &7CP's"));
+                lore.add(Common.colorize("&7per message!"));
+                lore.add(Common.colorize(" "));
+                lore.add(Common.colorize("&7View your &7FXP Levels &7and"));
+                lore.add(Common.colorize("&7points inside this menu!"));
+                lore.add(Common.colorize(" "));
+                lore.add(Common.colorize("&EClick to view!"));
+
+
+                meta.setLore(lore);
+                CommunicatingPooints.setItemMeta(meta);
+
+                return CommunicatingPooints;
+
+
+            }
+        };
+
 
         ShadowyAuction = new Button() {
             @Override
@@ -185,6 +250,12 @@ public class PrisonMenu extends Menu {
 
         if (slot == 14)
             return ShadowyAuction.getItem();
+
+        if (slot == 15)
+            return CommunicatingPoints.getItem();
+
+        if (slot == 16)
+            return QuestsLog.getItem();
 
         return ItemCreator.of(CompMaterial.BLACK_STAINED_GLASS_PANE,
                 " ")

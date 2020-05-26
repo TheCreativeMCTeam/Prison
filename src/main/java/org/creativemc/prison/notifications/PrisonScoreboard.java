@@ -35,6 +35,8 @@ public class PrisonScoreboard implements Listener {
         lines.add(Common.colorize("&FQuest: &EMerchant I"));
         lines.add(Common.colorize("&FMine: &AMega"));
         lines.add(Common.colorize(" "));
+        lines.add(Common.colorize("&E➜ &BDiamond Mine"));
+        lines.add(Common.colorize(" "));
         lines.add(Common.colorize("&FCoins:"));
         lines.add(Common.colorize("&FNode:" + " " + ChatColor.AQUA + node));
         lines.add(Common.colorize(" "));
@@ -42,7 +44,7 @@ public class PrisonScoreboard implements Listener {
 
 
         Common.runTimerAsync(20, () -> {
-            PrisonScoreboard.setTitle(Common.colorize("&E&LPRISON"));
+            PrisonScoreboard.setTitle(Common.colorize("&E&LPRISON &A&LREVAMP"));
             PrisonScoreboard.setLines(lines);
         });
     }

@@ -1,6 +1,6 @@
-C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\setup\PrisonMineCreateCommand.java
-C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\setup\PrisonSetupCommandGroup.java
-C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\setup\PrisonSetupMineSet.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\utils\TypePrison.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\commands\ReloadPrison.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\commands\PrisonMenuCommand.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\events\RankPrefix.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\menus\PrisonMenu.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\notifications\CustomTAB.java
@@ -9,9 +9,15 @@ C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\ranks\Ran
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\ranks\Rank.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\ranks\RankAdmin.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\notifications\PrisonScoreboard.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\commands\RewardMenuCommand.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\ranks\RankPrisoner.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\events\PlayerListener.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\database\MYSQL.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\tools\HardendDiamondPick.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\notifications\Rewards.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\PlayerCache.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\commands\DiamondSwordArmourStand.java
 C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\commands\AdminRankCommand.java
-C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\enchantments\Efficiency.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\menus\RewardsMenu.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\database\DatabaseEvent.java
+C:\Users\krity\IdeaProjects\Prison\src\main\java\org\creativemc\prison\settings\Settings.java

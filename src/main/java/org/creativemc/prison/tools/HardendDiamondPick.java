@@ -20,7 +20,7 @@ public class HardendDiamondPick extends Tool {
     @Override
     public ItemStack getItem() {
         return ItemCreator.of(CompMaterial.DIAMOND_PICKAXE, "&9Hardend Diamond Pickaxe",
-                "", "", "&A85% &7chance of double drops", "&7when using this pickaxe!", "",
+                "&A85% &7chance of double drops", "&7when using this pickaxe!", "",
                 "&7Require Materials:", "&F• &EDiamond Mine", "&F• &8(64x) &BChopped Logs", "",
                 TypePrison.XPENCHANTING.name()).glow(true)
                 .build().make();

@@ -31,6 +31,10 @@ public class PlayerCache extends YamlSectionConfig {
         loadConfiguration(null, "data.db");
     }
 
+    public static PlayerCache getCache(final UUID uuid) {
+        return null;
+    }
+
     @Override
     protected void onLoadFinish() {
         if (isSet("Class")) {
@@ -71,13 +75,13 @@ public class PlayerCache extends YamlSectionConfig {
         save("Rank", rank.getName());
     }
 
-    public static PlayerCache getCache(final Player player) {
-        PlayerCache cache = cacheMap.get(player.getUniqueId());
+    public static PlayerCache getCache(final Player player, final UUID uuid) {
+        PlayerCache cache = cacheMap.get(uuid);
 
         if (cache == null) {
-            cache = new PlayerCache(player.getUniqueId().toString());
+            cache = new PlayerCache(player.toString());
 
-            cacheMap.put(player.getUniqueId(), cache);
+            cacheMap.put(uuid, cache);
         }
 
         return cache;

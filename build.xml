@@ -9,7 +9,7 @@
      -->
 
     <!-- Your MC test server location for Windows -->
-    <condition property="serverPath" value="C:\Users\krity\Desktop\Test Servers\1.8.8">
+    <condition property="serverPath" value="C:\Users\krity\Desktop\Testing Environment">
         <os family="windows"/>
     </condition>
 
